@@ -18,7 +18,7 @@ class FireBase {
   }
 
   setBuildingsListener(listener) {
-    this.realtimeDatabase.collection('buildings').limit(20).onSnapshot(listener);
+    this.realtimeDatabase.collection('frameworks').limit(20).onSnapshot(listener);
   }
 
   async setToken(token) {
