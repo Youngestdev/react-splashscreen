@@ -7,7 +7,8 @@ function Framework(framework) {
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{framework.name}</h5>
-          <p className="card-text">{framework.address}</p>
+          <hr className="my-4" />
+          <p className="card-text">{framework.about}</p>
         </div>            
       </div>
     </div>
