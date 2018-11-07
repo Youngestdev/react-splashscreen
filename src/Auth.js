@@ -5,7 +5,7 @@ class Auth {
     this.auth0 = new auth0.WebAuth({
       domain: 'budul.auth0.com',
       clientID: 'H5WocKc729qvrAw8L3nKSUN7srQQdIxq',
-      redirectUri: 'http://localhost:3000/callback',
+      redirectUri: 'http://localhost:3000',
       responseType: 'token id_token',
       scope: 'openid profile'
     });

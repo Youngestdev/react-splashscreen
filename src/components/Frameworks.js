@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import firebaseClient from '../services/FireBase';
+import {CircleSpinner} from 'react-spinners-kit';
 
-function Framework(framework) {
+function Framework(framework, id) {
   return (
-    <div className="row">
+    <div className="row" key={id}>
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{framework.name}</h5>
@@ -42,8 +43,8 @@ class Frameworks extends Component {
     const {loading, frameworks} = this.state;
     return (
       <div>
-        {loading && <p>No data returned</p>}
-        {!loading && frameworks.map((framework) => (Framework(framework)))}
+        {loading && <CircleSpinner color="" />}
+        {!loading && frameworks.map((framework, id) => (Framework(framework, id)))}
       </div>
     )
   }
