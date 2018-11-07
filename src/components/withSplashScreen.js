@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {Component} from 'react';
 import { CircleSpinner } from 'react-spinners-kit';
 import auth0Client from '../Auth';
-import firebaseClient from '../services/FireBase';
+import firebaseClient from '../services/firebase';
 
 
 const fbTokenFactory = 'http://localhost:3001/firebase';

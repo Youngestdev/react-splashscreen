@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import firebaseClient from '../services/FireBase';
+import firebaseClient from '../services/firebase';
 import {CircleSpinner} from 'react-spinners-kit';
 
 function Framework(framework, id) {
