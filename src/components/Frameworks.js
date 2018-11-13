@@ -4,7 +4,7 @@ import {CircleSpinner} from 'react-spinners-kit';
 
 function Framework(framework, id) {
   return (
-    <div className="row" key={id}>
+    <div className="mb-2 row" key={id}>
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{framework.name}</h5>
@@ -27,7 +27,7 @@ class Frameworks extends Component {
   }
 
   componentDidMount() {
-    firebaseClient.setBuildingsListener(querySnapshot => {
+    firebaseClient.setFrameworksListener(querySnapshot => {
       const frameworks = [];
       querySnapshot.forEach(framework => {
         frameworks.push(framework.data());
