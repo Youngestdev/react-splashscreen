@@ -3,7 +3,7 @@ import firebaseClient from '../services/firebase';
 
 function Framework(framework) {
   return (
-    <div className="row">
+    <div className="mb-3 row">
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{framework.name}</h5>
