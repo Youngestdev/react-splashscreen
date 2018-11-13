@@ -17,7 +17,7 @@ class FireBase {
     });
   }
 
-  setBuildingsListener(listener) {
+  setFrameworksListener(listener) {
     this.realtimeDatabase.collection('frameworks').limit(20).onSnapshot(listener);
   }
 

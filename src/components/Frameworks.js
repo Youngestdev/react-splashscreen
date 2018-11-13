@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import firebaseClient from '../services/FireBase';
+import firebaseClient from '../services/firebase';
 
 function Framework(framework) {
   return (
@@ -26,7 +26,7 @@ class Frameworks extends Component {
   }
 
   componentDidMount() {
-    firebaseClient.setBuildingsListener(querySnapshot => {
+    firebaseClient.setFrameworksListener(querySnapshot => {
       const frameworks = [];
       querySnapshot.forEach(framework => {
         frameworks.push(framework.data());
